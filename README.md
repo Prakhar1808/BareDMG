@@ -236,5 +236,8 @@ Place test ROM in `roms/tests/` and run them through the emulator to verify corr
 - [Opcode Reference](https://www.pastraiser.com/cpu/gameboy/gameboy_opcodes.html)
 - [Game Boy Programming Manual](https://archive.org/details/GameBoyProgManVer1.1/mode/2up)
 
+## Contributing
+Want to help improve BareDMG? Check out [CONTRIBUTING.md](./CONTRIBUTING.md) for instructions on contributing code, tests, and documentation.
+
 ## License
 This project is licensed under the GPL v3 License. You are free to use, modify, and distribute this software under the terms of the [GPL v3 license](./LICENSE)
