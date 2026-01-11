@@ -53,4 +53,23 @@ typedef int64_t  i64;
 #define GET_HIGH_BYTE(val) ((u8)((val) >> 8))
 #define GET_LOW_BYTE(val) ((u8)((val) & 0xFF))
 
+// ---------------------------------------------
+// Complex Utility Functions
+// ---------------------------------------------
+u16  swap_bytes(u16 val);              // Swap endianness
+bool check_half_carry_add(u8 a, u8 b); // Check if half-carry occurred (bit 3->4)
+bool check_carry_add(u8 a, u8 b);      // Check if carry occurred (bit 7->8)
+bool check_half_carry_sub(u8 a, u8 b); // Half-carry for subtraction
+bool check_carry_sub(u8 a, u8 b);      // Carry for subtraction
+
+// 16-bit carry checks (for 16-bit arithmetic)
+bool check_half_carry_add_u16(u16 a, u16 b); // Half-carry bit 11->12
+bool check_carry_add_u16(u16 a, u16 b);      // Carry bit 15->16
+
+// Binary Coded Decimal (BCD) adjustment for DAA instruction
+u8   adjust_bcd(u8 value, bool subtract, bool carry, bool half_carry);
+
+// Sign extension (for relative jumps)
+i16  sign_extend_i8(u8 val); // Extend 8 bit signed to 16-bit
+
 #endif
