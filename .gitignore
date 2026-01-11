@@ -1,0 +1,40 @@
+# Build artifacts
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+
+# Binaries & objects
+*.o
+*.a
+*.so
+*.out
+baredmg
+
+# Debugging / profiling
+*.gdb
+*.dSYM/
+*.prof
+vgcore.*
+callgrind.out.*
+perf.data*
+perf.data.old
+
+
+# ROMs & test data
+roms/*
+
+# Test outputs
+tests/output/
+tests/logs/
+
+# Coverage / testing tools
+*.gcda
+*.gcno
+*.gcov
+coverage/
+
+# External deps
+external/*
+
