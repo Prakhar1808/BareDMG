@@ -4,12 +4,13 @@
 set(CORE_SOURCES
     utils.c
     cartridge.c
+    bus.c
+    gbemu.c
     # NOTE: We'll add more as they are written
     # cpu/cpu.c
     # cpu/cpu_decode.c
     # cpu/cpu_exec.c
     # cpu/cpu_tables.c
-    # mmu.c
     # ppu.c
     # apu.c
     # timer.c
