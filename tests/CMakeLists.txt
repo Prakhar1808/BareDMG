@@ -23,5 +23,6 @@ endfunction()
 # We'll add more as they are written
 add_gb_test(test_utils)
 add_gb_test(test_cartridge)
+add_gb_test(test_mmu)
 # add_gb_test(test_cpu)
 # add_gb_test(test_mmu)
